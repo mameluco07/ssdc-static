@@ -1,0 +1,357 @@
+/* --------------------------------*/
+/* BASIC SETUP */
+/*---------------------------------*/
+
+:root{
+  --HL: #3b1855;
+  --HL-hover: #7d2a99;
+  --D-grey: #2C3A47;
+  --L-grey: #CAD3C8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  color: #fff;
+  font-family: "Hind", "Arial", sans-serif;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  text-decoration: none;
+}
+
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+/* 
+  font-family: 'Hind', sans-serif;
+  font-family: 'Macondo', cursive;
+  font-family: 'Macondo Swash Caps', cursive; */
+
+/* ----- HEADINGS ----- */
+
+h1,
+h2,
+h3 {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  margin-top: 20%;
+  font-family: 'Macondo Swash Caps', cursive;
+  font-size: 240%;
+  padding-bottom: 0.6em;
+  word-spacing: 4%;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  margin-bottom: 1em;
+  text-transform: capitalize;
+}
+
+h2 {
+  color: rgb(255, 255, 255);
+  font-family: 'Macondo', cursive;
+  font-size: 180%;
+  text-transform: capitalize;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 5%;
+  letter-spacing: 0.15em;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 110%;
+  margin-bottom: 15%;
+}
+
+
+/* --------------------------------*/
+/* REUSABLE COMPONENTS */
+/*---------------------------------*/
+
+.row {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 60px 0;
+}
+
+.box {
+  padding: 3%;
+}
+
+/* .box p {
+  font-size: 90%;
+  line-height: 145%;
+} */
+
+
+
+/* --------------------------------*/
+/* ---------- HEADER ------ */
+/*---------------------------------*/
+
+.header {
+  z-index: 0;
+}
+
+
+
+/* --------------------------------*/
+/* ---------- NAV ---------------- */
+/*---------------------------------*/
+
+nav {
+  display: flex;
+  margin: 5px auto !important;
+  color: #fff;
+  font-family: "Hind", "Arial", sans-serif;
+  font-size: 1.1em;
+  font-weight: 700;
+  text-decoration: none;
+  position: absolute;
+  z-index: 0;
+  width: 100vw;
+  /* max-width: 1200px; */
+  float: none !important;
+}
+
+.main-nav {
+  float: right;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  /* margin-left: 1px; */
+  margin-top: 5px;
+  text-decoration: none;
+  padding-right: 2em;
+  
+}
+
+.main-nav div a:link {
+  color: #fff;
+  text-decoration: none;
+
+}
+
+.logo {
+  float: left;
+  display: flex;
+  justify-content: flex-start;
+  fill: #fff;
+  padding-left: 1em;
+  transform: none;
+
+}
+
+a.logo {
+  /* justify-content: center; */
+}
+
+
+/* --------------------------------*/
+/* ---------- FRONTPAGE ---------- */
+/*---------------------------------*/
+
+#welcome {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/woman_lighting_candles.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-attachment: fixed;
+  position: static;
+  z-index: -1;
+}
+
+.banner {
+  position: initial;
+}
+
+.intro {
+  color: floralwhite;
+  padding-bottom: 1em;
+  position: relative;
+  z-index: auto;
+  
+}
+
+.intro a{
+  position: relative;
+  z-index: 10;
+}
+
+.read a {
+  color: rgb(253, 213, 160);
+  font-family: "Hind", "Arial", sans-serif;
+  font-size: 1.2em;
+  font-weight: 300;
+  text-align: right;
+  width: 70%;
+  padding: 1px;
+  margin-bottom: 2em;
+  position: relative;
+  z-index: auto;
+  
+}
+
+/* -------- PARAGRAPHS --------*/
+
+.long-copy {
+  display: inline-block;
+  /* flex-direction: column; */
+  text-align: center;
+  font-family: 'Hind', sans-serif;
+  font-size: 120%;
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+  width: 70%;
+  max-width: 70em;
+  padding-bottom: 1em;
+  position: relative;
+}
+
+
+
+/*----- LINKS ----*/
+
+a:link,
+a:visited {
+    /* color: #fff; */
+    text-decoration: none;
+    z-index: 100;
+    position: relative;
+    z-index: auto;
+
+}
+
+a:hover,
+a:active {
+    color: #555;
+    border-bottom: 1px solid transparent;
+    position: relative;
+    z-index: auto;
+    
+}
+
+
+.read a:link,
+      a:visited {
+        color: rgb(253, 213, 160);
+        position: relative;
+        z-index: auto;
+      
+      }
+
+.read a:hover {
+  color: #908856;
+  position: relative;
+  z-index: auto;
+ 
+}
+
+/* -------------BUTTONS --------------*/
+
+.btn-blue {
+  margin-top: 1em;
+  margin-left: 10px;
+  padding: 4px 15px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 12px;
+}
+
+
+.btn:link,
+.btn:visited,
+input[type=submit] {
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-blue:link,
+.btn-blue:visited,
+input[type=submit] {
+    background-color: #0c3964a1;
+    color: #fff;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: #1176e97a;
+}
+
+/* .btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #cf6d17;
+    color: #fff;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #e67e22;
+    color: #e67e22;
+} */
+
+/* ----------FOOTER-----------*/
+
+footer {
+  background-color: black;
+  font-family: 'Hind', sans-serif;
+  display: block;
+  height: 100px;
+
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* align-items: flex-start; */
+  padding: 1em;
+  text-decoration: none;
+}
+
+.footer-nav a {
+  color: #fff;
+}
+
+.footer-nav-btn {
+  background-color: var(--HL);
+  padding: 0.3em 0.7em;
+  border-radius: .3em;
+}
+
+.copyright {
+  text-align: center;
+}
+
+.footer-nav a:hover {
+  color: #888;
+  background-color: var(--HL-hover);
+  /* font-size: 1.1em; */
+  /* text-decoration-line: underline; */
+}
