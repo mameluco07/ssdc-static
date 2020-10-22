@@ -86,7 +86,7 @@ h3 {
 /* REUSABLE COMPONENTS */
 /*---------------------------------*/
 
-.row {
+/* .row {
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -99,7 +99,7 @@ section {
   padding: 3%;
 }
 
-/* .box p {
+.box p {
   font-size: 90%;
   line-height: 145%;
 } */
@@ -111,7 +111,10 @@ section {
 /*---------------------------------*/
 
 .header {
+  display: flex;
   z-index: 0;
+  align-items: center;
+  
 }
 
 
@@ -122,7 +125,8 @@ section {
 
 nav {
   display: flex;
-  margin: 5px auto !important;
+  /* margin: 5px auto !important; */
+  justify-content: center;
   color: #fff;
   font-family: "Hind", "Arial", sans-serif;
   font-size: 1.1em;
@@ -133,19 +137,26 @@ nav {
   width: 100vw;
   /* max-width: 1200px; */
   float: none !important;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 .main-nav {
   float: right;
   display: flex;
   flex-wrap: wrap;
+  /* align-items: flex-end; */
   justify-content: flex-end;
   /* margin-left: 1px; */
   margin-top: 5px;
   text-decoration: none;
   padding-right: 2em;
-  
+  margin-right: auto;
+  margin-left: auto;
 }
+
+
 
 .main-nav div a:link {
   color: #fff;
@@ -158,14 +169,24 @@ nav {
   display: flex;
   justify-content: flex-start;
   fill: #fff;
-  padding-left: 1em;
+  padding-left: .2em;
   transform: none;
+  position: static;
 
 }
 
-a.logo {
-  /* justify-content: center; */
+.logo-mob {
+  display: none;
 }
+
+/* img .logo-white {
+  display: block;
+} */
+
+
+/* a.logo {
+  justify-content: center;
+} */
 
 
 /* --------------------------------*/
