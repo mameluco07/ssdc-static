@@ -1,4 +1,5 @@
 @media (max-width: 768px) { /* arbitrary breakpoint, around the size of a tablet */
+   
     .nav {
       /* first, make our dropdown cover the screen */
       position: fixed;
@@ -24,6 +25,30 @@
   
       background: black;
     }
+
+    .section-history {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 4%;
+      padding: 3%;
+      font-size: 100%;
+    }
+
+    .obj {
+      display: none;
+    }
+
+  
+  }
+
+  @media (max-width: 768px) {
+    nav ul{
+      display: none;
+    }
+
+    .obj {
+      display: none;
+    }
   }
 
   @media (min-width: 1200px) {
@@ -39,6 +64,26 @@
     .logo {
         padding-left: 15%;
     }
+
+    .section-history {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 3%;
+      padding: 3%;
+    }
+    
+    .obj {
+      display: flex;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .obj {
+      display: none;
+    }
+
+
+
   }
 
   @media (min-width: 1600px) {
@@ -54,9 +99,10 @@
         padding-right: 22%;
     }
 
+
   }
 
-  @media (max-width: 540px) {
+  @media (max-width: 480px) {
     .main-nav {
       display: none;
     }
@@ -72,6 +118,17 @@
     .logo-mob {
       display: block;
       
+    }
+
+    .section-history {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 4%;
+      padding: 3%;
+      justify-items: center;
+      height: fit-content;
+      width: 100%;
+    
     }
 
 
