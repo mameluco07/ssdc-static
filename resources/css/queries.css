@@ -27,7 +27,6 @@
     }
 
     .section-history {
-      display: grid;
       grid-template-columns: 1fr;
       gap: 4%;
       padding: 3%;
@@ -38,32 +37,53 @@
       display: none;
     }
 
+    .section-mission {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    
+    .ganesh {
+      display: none;
+    }
+
   
   }
 
-  @media (max-width: 768px) {
-    nav ul{
+  @media (max-width: 800px) {
+    /* .main-nav{
       display: none;
-    }
+    } */
 
     .obj {
       display: none;
     }
+
+    .section-mission {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .temple-day {
+      display: none;
+    }
+
+   
+
   }
+
+
 
   @media (min-width: 1200px) {
     .main-nav {
         margin: auto;
-        padding-right: 15%;
+        padding-right: 13%;
     }
 
     .intro > h1{
         font-size: 4em;
     }
 
-    .logo {
-        padding-left: 15%;
-    }
+
 
     .section-history {
       display: grid;
@@ -75,6 +95,11 @@
     .obj {
       display: flex;
     }
+
+    .logo {
+      padding-left: 6%;
+  }
+
   }
 
   @media (max-width: 1200px) {
@@ -90,13 +115,14 @@
     .intro > h1{
         font-size: 5em;
     }
+
     .logo {
-        padding-left: 22%;
+        padding-left: 10%;
     }
 
     .main-nav {
         margin: auto;
-        padding-right: 22%;
+        padding-right: 20%;
     }
 
 
@@ -130,6 +156,11 @@
       width: 100%;
     
     }
+
+    .section-mission {
+      display: grid;
+      grid-template-columns: 1fr;
+    }    
 
 
   }
