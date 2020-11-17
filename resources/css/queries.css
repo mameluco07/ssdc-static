@@ -9,10 +9,10 @@
       height: 100vh;
       /* fix nav height on mobile safari, where 100vh is a little off */
       height: -webkit-fill-available;
-  
+
       /* then, arrange our links top to bottom */
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       /* center links vertically, push to the right horizontally.
          this means our links will line up with the rightward hamburger button */
       justify-content: center;
@@ -25,6 +25,10 @@
   
       background: black;
     }
+/* 
+    .main-nav {
+      display: none;
+    } */
 
     .section-history {
       grid-template-columns: 1fr;
@@ -46,13 +50,14 @@
       display: none;
     }
 
+
   
   }
 
-  @media (max-width: 800px) {
-    /* .main-nav{
+  @media (max-width: 900px) {
+    .main-nav{
       display: none;
-    } */
+    }
 
     .obj {
       display: none;
