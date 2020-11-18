@@ -1,34 +1,75 @@
-@media (max-width: 768px) { /* arbitrary breakpoint, around the size of a tablet */
-   
-    .nav {
-      /* first, make our dropdown cover the screen */
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 100vh;
-      /* fix nav height on mobile safari, where 100vh is a little off */
-      height: -webkit-fill-available;
+@media (max-width: 479px) {
+  
+  #welcome {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/woman_lighting_candles.jpg);
 
-      /* then, arrange our links top to bottom */
-      display: flex;
-      flex-direction: row;
-      /* center links vertically, push to the right horizontally.
-         this means our links will line up with the rightward hamburger button */
-      justify-content: center;
-      align-items: flex-end;
+  }
   
-      /* add margins and padding to taste */
-      margin: 0;
-      padding-left: 7vw;
-      padding-right: 7vw;
   
-      background: black;
+  .long-copy {
+    width: 80%;
+  }
+  
+  .section-history {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4%;
+    padding: 3%;
+    justify-items: center;
+    height: fit-content;
+    width: 100%;
+  
+  }
+
+  .section-mission {
+    display: grid;
+    grid-template-columns: 1fr;
+  }    
+
+
+}
+
+
+@media (max-width: 767px) { /* arbitrary breakpoint, around the size of a tablet */
+  .main-nav { 
+    float: left;
+    margin-top: 35px;
+    margin-left: 25px;
+
+}
+
+.main-nav{ display: none; }
+
+.main-nav a {
+    display: block;
+}
+
+.main-nav div a:link,
+.main-nav div a:visited {
+    display: block;
+    border: 0;
+    padding: 10px 0;
+    font-size: 100%;
+}
+
+
+    .mobile-nav-icon { 
+      display: inline-block;
+      margin-right: 5%;
+     }
+
+
+    .intro p {
+      font-size: 1em;
     }
-/* 
-    .main-nav {
-      display: none;
-    } */
+
+    .intro div {
+      width: 100%;
+    }
+
+    .read {
+      width: 90%;
+    }
 
     .section-history {
       grid-template-columns: 1fr;
@@ -50,14 +91,13 @@
       display: none;
     }
 
+    .logo {
+      position: fixed;
+    }
 
-  
   }
 
-  @media (max-width: 900px) {
-    .main-nav{
-      display: none;
-    }
+  @media (max-width: 850px) {
 
     .obj {
       display: none;
@@ -72,15 +112,17 @@
       display: none;
     }
 
-   
+   .long-copy {
+     font-size: 110%;
+   }
 
   }
 
 
 
-  @media (min-width: 1200px) {
+  @media (min-width: 1199px) {
     .main-nav {
-        margin: auto;
+        /* margin: auto; */
         padding-right: 13%;
     }
 
@@ -89,6 +131,9 @@
     }
 
 
+    .read {
+      padding-bottom: 7em;
+    }
 
     .section-history {
       display: grid;
@@ -102,7 +147,7 @@
     }
 
     .logo {
-      padding-left: 6%;
+      padding-left: 15%;
   }
 
   }
@@ -112,8 +157,6 @@
       display: none;
     }
 
-
-
   }
 
   @media (min-width: 1600px) {
@@ -122,7 +165,7 @@
     }
 
     .logo {
-        padding-left: 10%;
+        padding-left: 20%;
     }
 
     .main-nav {
@@ -130,42 +173,5 @@
         padding-right: 20%;
     }
 
-
   }
 
-  @media (max-width: 480px) {
-    .main-nav {
-      display: none;
-    }
-    
-    .logo {
-      display: none;
-    }
-
-    #logo-mob {
-      position: absolute;
-    }
-
-    .logo-mob {
-      display: block;
-      
-    }
-
-    .section-history {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 4%;
-      padding: 3%;
-      justify-items: center;
-      height: fit-content;
-      width: 100%;
-    
-    }
-
-    .section-mission {
-      display: grid;
-      grid-template-columns: 1fr;
-    }    
-
-
-  }
