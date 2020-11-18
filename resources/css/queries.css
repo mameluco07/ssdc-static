@@ -33,24 +33,41 @@
 @media (max-width: 767px) { /* arbitrary breakpoint, around the size of a tablet */
   .main-nav { 
     float: left;
-    margin-top: 35px;
-    margin-left: 25px;
-
-}
-
-.main-nav{ display: none; }
-
-.main-nav a {
+    margin-top: 50px;
+    margin-left: 0px;
+    padding: 0%;
     display: block;
-}
 
-.main-nav div a:link,
-.main-nav div a:visited {
-    display: block;
-    border: 0;
-    padding: 10px 0;
-    font-size: 100%;
-}
+  }
+
+  .main-nav{ display: none; }
+
+  .main-nav a {
+      display: block;
+      
+  }
+
+  .btn-blue {
+    width: 200px;
+    margin: 0px;
+    text-align: center;
+  }
+
+  .about-btn:hover .about-content {
+    display: none;
+  }
+  
+  .events-btn:hover .events-content {
+    display: none;
+  }
+
+  .main-nav div a:link,
+  .main-nav div a:visited {
+      display: block;
+      border: 0;
+      padding: 10px 0;
+      font-size: 100%;
+  }
 
 
     .mobile-nav-icon { 
