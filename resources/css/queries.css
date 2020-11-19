@@ -2,12 +2,12 @@
   
   #welcome {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/woman_lighting_candles.jpg);
-
+    padding-bottom: 2em;
   }
   
   
   .long-copy {
-    width: 80%;
+    width: 90%;
   }
   
   .section-history {
@@ -26,25 +26,30 @@
     grid-template-columns: 1fr;
   }    
 
-
+  .logo {
+    display: flex;
+  }
+  
 }
 
-
 @media (max-width: 767px) { /* arbitrary breakpoint, around the size of a tablet */
+  #welcome {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/woman_lighting_candles_mobile.jpg);
+    padding-bottom: 3em;
+  }
+
   .main-nav { 
-    float: left;
-    margin-top: 50px;
-    margin-left: 0px;
+    /* float: right; */
+    margin-top: 0;
+    margin-right: 4em;
     padding: 0%;
     display: block;
-
   }
 
   .main-nav{ display: none; }
 
   .main-nav a {
       display: block;
-      
   }
 
   .btn-blue {
@@ -63,56 +68,103 @@
 
   .main-nav div a:link,
   .main-nav div a:visited {
-      display: block;
-      border: 0;
-      padding: 10px 0;
-      font-size: 100%;
+    display: block;
+    border: 0;
+    padding: 10px 0;
+    font-size: 100%;
+  }
+
+  .mobile-nav-icon { 
+    display: inline-block;
+    margin-right: 8%;
+  }
+
+  .about-btn {
+    margin-top: 0.5em;
+  }
+
+  .events-btn {
+    margin-top: 0.5em;
+  }
+
+  .news-btn {
+    margin-top: 0.5em;
+  }
+
+  .links-btn {
+    margin-top: 0.5em;
+  }
+  
+  .patrons-btn {
+    margin-top: 0.5em;
+  }
+  
+  .contact-btn {
+    margin-top: 0.5em;
+  }
+
+  .intro p {
+    font-size: 1em;
+  }
+
+  .intro div {
+    width: 100%;
+  }
+
+  .read {
+    width: 90%;
+  }
+
+  .section-history {
+    grid-template-columns: 1fr;
+    gap: 4%;
+    padding: 3%;
+    font-size: 100%;
+  }
+
+  .obj {
+    display: none;
+  }
+
+  .section-mission {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+  .ganesh {
+    display: none;
+  }
+
+  .logo {
+    position: fixed;
+  }
+
+  #contact {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .call {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    justify-self: center;
+    padding-left: 1em;
+  }
+
+  .form {
+    grid-column-start: 1;
+    grid-row-start: 3;
+    margin: 5%;
+    justify-self: center;
+    border-radius: 20%;
   }
 
 
-    .mobile-nav-icon { 
-      display: inline-block;
-      margin-right: 5%;
-     }
-
-
-    .intro p {
-      font-size: 1em;
-    }
-
-    .intro div {
-      width: 100%;
-    }
-
-    .read {
-      width: 90%;
-    }
-
-    .section-history {
-      grid-template-columns: 1fr;
-      gap: 4%;
-      padding: 3%;
-      font-size: 100%;
-    }
-
-    .obj {
-      display: none;
-    }
-
-    .section-mission {
-      display: grid;
-      grid-template-columns: 1fr;
-    }
-    
-    .ganesh {
-      display: none;
-    }
-
-    .logo {
-      position: fixed;
-    }
-
+  footer {
+    display: none;
   }
+
+}
 
   @media (max-width: 850px) {
 

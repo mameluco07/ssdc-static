@@ -13,6 +13,7 @@
   margin: 0;
   padding: 0;
   /* box-sizing: border-box; */
+  
 }
 
 /* *{
@@ -137,6 +138,14 @@ section {
 button {
   text-decoration-style: none;
 }
+
+/* #menu {
+  position: relative;
+}
+
+nav {
+  height: 100vh;
+} */
 
 /* --------------------------------*/
 /* ---------- NAV ---------------- */
@@ -346,9 +355,9 @@ input[type=submit]:active {
   padding-top: 30em;
 }
 
-.banner {
+/* .banner {
   position: initial;
-}
+} */
 
 .long-copy {
   display: inline-block;
@@ -561,25 +570,117 @@ a:active {
  
 }
 
+/* -------- CONTACT PAGE----------*/
 
+#contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 15% 70% 15%;
+  background-color: #efefef;
+  height: 100vh;
+  background-size: cover;
+}
+
+.form {
+  grid-row-start: 2;
+  grid-column-start: 1;
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  justify-content: center;
+  justify-self: right;
+  margin: 5%;
+  padding: 1em;
+  
+}
+
+.form input {
+  padding: 10px;
+}
+
+.form .text {
+  height: 5em;
+}
+
+.call h1 {
+  text-align: left;
+}
+
+.call p {
+  font-size: 130%;
+  margin-bottom: 0.5em;
+  padding-top: 14%;
+}
+
+.call {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-self: left;
+  font-size: 120%;
+  font-weight: 500;
+}
+
+#submit {
+  color: #fff;
+  background-color: #003b88;
+  max-width: 50%;
+  font-family: 'hind';
+  font-size: 120%;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 0.5em;
+  padding: 0.3em;
+  letter-spacing: 0.2em;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.5em 1em;
+}
+
+.submit-btn {
+  /* padding: 2em; */
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+textarea {
+  padding: 1em;
+}
 
 /* ----------FOOTER-----------*/
 
 footer {
+  color: #fff;
   background-color: black;
   font-family: 'Hind', sans-serif;
+  grid-row-start: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-auto-rows: min-content;
-  height: 100px;
-  width: 100vw;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* width: 100vw; */
+  flex-direction: row;
+  align-items: top;
+  padding-top: 1.2em;
+  justify-items: center;
 }
 
-.footer-nav {
+footer p {
+  line-height: 1.35em;
+}
+
+/* .footer-nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  /* align-items: flex-start; */
+  align-items: flex-start;
   padding: 1em;
   text-decoration: none;
 }
@@ -594,11 +695,6 @@ footer {
   border-radius: .3em;
 }
 
-.copyright {
-  color: #fff;
-  text-align: center;
-}
-
 .footer-nav a:hover {
   color: #888;
   background-color: var(--HL-hover);
@@ -606,9 +702,9 @@ footer {
   /* text-decoration-line: underline; */
 }
 
-/* HISTORY SECTION */
+.copyright {
+  color: #fff;
+  text-align: center;
+} */
 
-section.history {
-  background-color: burlywood;
-}
 
