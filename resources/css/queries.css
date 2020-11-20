@@ -154,11 +154,19 @@
   .form {
     grid-column-start: 1;
     grid-row-start: 3;
-    margin: 5%;
+    margin: 0%;
     justify-self: center;
     border-radius: 20%;
   }
 
+  .call {
+    flex-direction: column;
+    justify-content: center;
+    justify-self: right;
+    padding: 1em;
+    font-size: 120%;
+    font-weight: 500;
+  }
 
   footer {
     display: none;
@@ -183,6 +191,10 @@
 
    .long-copy {
      font-size: 110%;
+   }
+
+   footer {
+     display: none;
    }
 
   }

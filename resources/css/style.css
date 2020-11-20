@@ -3,8 +3,8 @@
 /*---------------------------------*/
 
 :root{
-  --HL: #3b1855;
-  --HL-hover: #7d2a99;
+  --DARK-BLUE: #0c3964;
+  --BTN-hover: #7d2a99;
   --D-grey: #2C3A47;
   --L-grey: #CAD3C8;
 }
@@ -290,6 +290,11 @@ nav {
 
 /* -------------BUTTONS --------------*/
 
+.btn {
+  cursor: pointer;
+  margin-top: 0.5em;
+}
+
 .btn-blue {
   margin-top: 0.5em;
   margin-left: 6px;
@@ -570,89 +575,8 @@ a:active {
  
 }
 
-/* -------- CONTACT PAGE----------*/
 
-#contact {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 15% 70% 15%;
-  background-color: #efefef;
-  height: 100vh;
-  background-size: cover;
-}
 
-.form {
-  grid-row-start: 2;
-  grid-column-start: 1;
-  display: flex;
-  align-items: left;
-  flex-direction: column;
-  justify-content: center;
-  justify-self: right;
-  margin: 5%;
-  padding: 1em;
-  
-}
-
-.form input {
-  padding: 10px;
-}
-
-.form .text {
-  height: 5em;
-}
-
-.call h1 {
-  text-align: left;
-}
-
-.call p {
-  font-size: 130%;
-  margin-bottom: 0.5em;
-  padding-top: 14%;
-}
-
-.call {
-  grid-column-start: 2;
-  grid-row-start: 2;
-  margin: 5%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  justify-self: left;
-  font-size: 120%;
-  font-weight: 500;
-}
-
-#submit {
-  color: #fff;
-  background-color: #003b88;
-  max-width: 50%;
-  font-family: 'hind';
-  font-size: 120%;
-  text-transform: uppercase;
-  font-weight: 600;
-  border-radius: 0.5em;
-  padding: 0.3em;
-  letter-spacing: 0.2em;
-  justify-self: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0.5em 1em;
-}
-
-.submit-btn {
-  /* padding: 2em; */
-  /* display: flex; */
-  /* flex-direction: row; */
-  /* justify-content: center; */
-  /* align-items: center; */
-}
-
-textarea {
-  padding: 1em;
-}
 
 /* ----------FOOTER-----------*/
 
