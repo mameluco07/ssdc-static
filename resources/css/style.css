@@ -3,10 +3,11 @@
 /*---------------------------------*/
 
 :root{
-  --DARK-BLUE: #0c3964;
-  --BTN-hover: #7d2a99;
+  --D-BLUE: #07335D;
+  --M-BLUE: #2699FB;
+  --L-BLUE: #BCE0FD;
   --D-grey: #2C3A47;
-  --L-grey: #CAD3C8;
+  --L-grey: #efefef;
 }
 
 * {
