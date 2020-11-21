@@ -1,0 +1,68 @@
+
+.dropdown-link-container > a {
+  margin-left: 20px; /* space out all our links */
+  display: none;
+}
+
+.mobile-dropdown-toggle {
+  display: none; /* hide our hamburger button until we're on mobile */
+}
+
+
+
+
+/* mobile nav that didn't work */
+
+    .logo, .mobile-dropdown-toggle {
+      z-index: 15;
+    }
+   
+    .dropdown-link-container {
+      /* first, make our dropdown cover the screen */
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 100vh;
+      /* fix nav height on mobile safari, where 100vh is a little off */
+      height: -webkit-fill-available;
+
+      /* then, arrange our links top to bottom */
+      display: flex;
+      flex-direction: column;
+      /* center links vertically, push to the right horizontally.
+         this means our links will line up with the rightward hamburger button */
+      justify-content: center;
+      align-items: flex-end;
+  
+      /* add margins and padding to taste */
+      margin: 0;
+      padding-left: 7vw;
+      padding-right: 7vw;
+
+      background: black;
+      z-index: 20; /* we're gonna avoid using -1 here, since it could position our navbar below other content on the page as well! */
+      /* background: black; */
+
+      opacity: 0;
+      transform: translateY(-100%);
+      transition: transform 0.2s, opacity 0.2s;
+
+    }
+    
+    nav.dropdown-opened > .dropdown-link-container {
+      opacity: 1;
+      transform: translateY(0);
+
+    }
+
+    .mobile-dropdown-toggle {
+      float: right;
+      display: initial; /* override that display: none attribute from before */
+      color: ivory;
+      background-color: rgba(255, 255, 240, 0);
+      font-size: 2em;
+      margin: 1em;
+    }
+
+    

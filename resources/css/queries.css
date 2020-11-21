@@ -5,7 +5,10 @@
     padding-bottom: 2em;
   }
   
-  
+  #contact {
+    padding-top: 80px;
+  }
+
   .long-copy {
     width: 90%;
   }
@@ -29,7 +32,54 @@
   .logo {
     display: flex;
   }
+
+  #contact {
+    margin-top: 0px;
+  }
   
+  .call {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 120%;
+    font-weight: 500;
+    justify-self: center;
+    margin: 2% 0 2% 0;
+  }
+  
+  .form {
+    grid-column-start: 1;
+    grid-row-start: 3;
+    margin: 0%;
+    justify-self: center;
+    border-radius: 20%;
+  }
+  
+  .call h1 {
+    font-size: 180%;
+    padding: 3%;
+    margin-bottom: 10px;
+  }
+
+  .call p {
+    font-size: 130%;
+    margin: 0 1em 0 0;
+  }
+
+  footer {
+    display: none;
+  }
+
+}
+
+@media (max-height: 479px) {
+
+  #contact {
+    padding-top: 80px;
+
+  }
+
 }
 
 @media (max-width: 767px) { /* arbitrary breakpoint, around the size of a tablet */
@@ -37,7 +87,7 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/woman_lighting_candles_mobile.jpg);
     padding-bottom: 3em;
   }
-
+  
   .main-nav { 
     /* float: right; */
     margin-top: 0;
@@ -45,19 +95,19 @@
     padding: 0%;
     display: block;
   }
-
+  
   .main-nav{ display: none; }
-
+  
   .main-nav a {
-      display: block;
+    display: block;
   }
-
+  
   .btn-blue {
     width: 200px;
     margin: 0px;
     text-align: center;
   }
-
+  
   .about-btn:hover .about-content {
     display: none;
   }
@@ -65,7 +115,7 @@
   .events-btn:hover .events-content {
     display: none;
   }
-
+  
   .main-nav div a:link,
   .main-nav div a:visited {
     display: block;
@@ -73,24 +123,24 @@
     padding: 10px 0;
     font-size: 100%;
   }
-
+  
   .mobile-nav-icon { 
     display: inline-block;
     margin-right: 8%;
   }
-
+  
   .about-btn {
     margin-top: 0.5em;
   }
-
+  
   .events-btn {
     margin-top: 0.5em;
   }
-
+  
   .news-btn {
     margin-top: 0.5em;
   }
-
+  
   .links-btn {
     margin-top: 0.5em;
   }
@@ -102,30 +152,30 @@
   .contact-btn {
     margin-top: 0.5em;
   }
-
+  
   .intro p {
     font-size: 1em;
   }
-
+  
   .intro div {
     width: 100%;
   }
-
+  
   .read {
     width: 90%;
   }
-
+  
   .section-history {
     grid-template-columns: 1fr;
     gap: 4%;
     padding: 3%;
     font-size: 100%;
   }
-
+  
   .obj {
     display: none;
   }
-
+  
   .section-mission {
     display: grid;
     grid-template-columns: 1fr;
@@ -134,7 +184,7 @@
   .ganesh {
     display: none;
   }
-
+  
   .logo {
     position: fixed;
   }
@@ -143,14 +193,19 @@
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
   }
-
+  
   .call {
     grid-column-start: 1;
     grid-row-start: 2;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+    font-size: 120%;
+    font-weight: 500;
     justify-self: center;
     padding-left: 1em;
   }
-
+  
   .form {
     grid-column-start: 1;
     grid-row-start: 3;
@@ -158,14 +213,19 @@
     justify-self: center;
     border-radius: 20%;
   }
-
+  
   .call {
-    flex-direction: column;
-    justify-content: center;
-    justify-self: right;
-    padding: 1em;
-    font-size: 120%;
-    font-weight: 500;
+  }
+  
+  .call h1 {
+    font-size: 180%;
+    padding: 3%;
+    margin-bottom: 10px;
+  }
+
+  .call p {
+    font-size: 130%;
+    margin: 0 1em 0 0;
   }
 
   footer {
