@@ -10,6 +10,8 @@
   --L-grey: #efefef;
 }
 
+/* background-color: #0c3964; */
+
 * {
   margin: 0;
   padding: 0;
@@ -303,6 +305,7 @@ nav {
   font-weight: 300;
   text-decoration: none;
   border-radius: 0.5em;
+  background-color: var(--D-BLUE);
 }
 
 .btn:link,
@@ -314,7 +317,7 @@ input[type=submit] {
 .btn-blue:link,
 .btn-blue:visited,
 input[type=submit] {
-    background-color: #0c3964;
+    background-color: var(--D-BLUE);
     color: #fff;
 }
 
@@ -322,7 +325,7 @@ input[type=submit] {
 .btn:active,
 input[type=submit]:hover,
 input[type=submit]:active {
-    background-color: #1176e9;
+    background-color: var(--M-BLUE);
 }
 
 
@@ -583,7 +586,7 @@ a:active {
 
 footer {
   color: #fff;
-  background-color: black;
+  background-color: var(--D-BLUE);
   font-family: 'Hind', sans-serif;
   grid-row-start: 3;
   grid-column-start: 1;
@@ -599,6 +602,10 @@ footer {
 
 footer p {
   line-height: 1.35em;
+}
+
+.title {
+  font-weight: 700;
 }
 
 /* .footer-nav {

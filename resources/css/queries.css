@@ -76,9 +76,21 @@
 @media (max-height: 479px) {
 
   #contact {
-    padding-top: 100px;
-
+    padding-top: 70px;
+    margin-bottom: 0px;
   }
+
+  .call {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 120%;
+    font-weight: 500;
+    justify-self: center;
+    margin: 3% 0 0 0;
+  }
+
 
 }
 
