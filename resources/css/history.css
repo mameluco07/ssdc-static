@@ -1,0 +1,95 @@
+/* SECTION HISTORY */
+
+html {
+  background-color: var(--CREAM);
+}
+
+:root{
+  --D-BLUE: #07335D;
+  --M-BLUE: #2699FB;
+  --L-BLUE: #BCE0FD;
+  --D-grey: #2C3A47;
+  --L-grey: #a09090;
+  --CREAM: #F3EFE4;
+}
+
+/* change moile nav color to black */
+
+.mobile-nav-icon {
+  float: right;
+  margin-top: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+.mobile-nav-icon i {
+  font-size: 200%;
+  color: #000;
+}
+
+
+#history {
+  background-color: var(--CREAM);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 15% 70% 15%;
+  height: 100vh;
+  background-size: cover;
+}
+
+.section-history {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-self: flex-end;
+  gap: 5%;
+  padding: 12% 4%;
+  width: 100%;
+  color: black;
+
+}
+
+.history{
+  margin-bottom: 1em;
+  padding: 0 2em;
+  }
+
+.history p{
+  margin: 2%;
+  padding-left: 2%;
+  margin-bottom: 1em;
+}
+
+.obj-p {
+  margin: 2%;
+  /* padding-left: 2%; */
+  margin-bottom: 0.75em;
+  padding: 0.2em;
+}
+
+.objectives {
+  list-style: none;
+  padding: 0 2em 2em 2em;
+}
+
+.objectives li {
+  padding-bottom: 0.75em;
+  /* padding: 0 1em; */
+}
+
+img.ganesh {
+  margin: 1%;
+  min-width: 1fr;
+  width: 100%;
+}
+
+img.obj {
+  padding-top: 3em;
+}
+
+.obj {
+  width: 100%;
+  padding-top: 0em;
+  align-content: center;
+}

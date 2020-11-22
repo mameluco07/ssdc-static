@@ -2,11 +2,19 @@
   
   #welcome {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/woman_lighting_candles.jpg);
-    padding-bottom: 2em;
+    padding-bottom: 1em;
   }
   
   #contact {
     padding-top: 100px;
+  }
+
+  .intro {
+    padding-bottom: 0px;
+  }
+
+  .intro > h1 {
+    margin-bottom: 0.5em;
   }
 
   .long-copy {
@@ -50,7 +58,8 @@
   
   .form {
     grid-column-start: 1;
-    grid-row-start: 3;
+    grid-row: 1;
+    grid-row-start: 2;
     margin: 0%;
     justify-self: center;
     border-radius: 20%;
@@ -67,6 +76,19 @@
     margin: 0 1em 0 0;
   }
 
+  
+  .call {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em 1em 0 2em;
+    font-size: 120%;
+    font-weight: 500;
+    justify-self: center;
+    
+  }
+
   footer {
     display: none;
   }
@@ -75,22 +97,32 @@
 
 @media (max-height: 479px) {
 
+  .intro > h1 {
+    margin-bottom: 0.5em;
+  }
+
   #contact {
-    padding-top: 70px;
+    padding-top: 100px;
     margin-bottom: 0px;
   }
 
   .call {
-    grid-column-start: 1;
-    grid-row-start: 2;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 120%;
-    font-weight: 500;
-    justify-self: center;
-    margin: 3% 0 0 0;
+   margin: 3% 0 0 0;
   }
 
+  footer {
+    display: none;
+  }
+
+  .form {
+    padding-top: 2em;
+  }
+
+  .call h1 {
+    font-size: 180%;
+    padding: 3%;
+    margin-bottom: 10px;
+  }
 
 }
 
@@ -211,11 +243,11 @@
     grid-row-start: 2;
     flex-direction: column;
     justify-content: center;
-    padding: 1em;
+    padding: 1em 1em 0 2em;
     font-size: 120%;
     font-weight: 500;
     justify-self: center;
-    padding-left: 1em;
+    
   }
   
   .form {
@@ -224,9 +256,6 @@
     margin: 0%;
     justify-self: center;
     border-radius: 20%;
-  }
-  
-  .call {
   }
   
   .call h1 {
@@ -301,13 +330,22 @@
 
     .logo {
       padding-left: 15%;
-  }
+    }
 
+    .call {
+      justify-self: left;
+    }
+
+ 
   }
 
   @media (max-width: 1200px) {
     .obj {
       display: none;
+    }
+
+    #history {
+    grid-template-columns: 1fr 2fr;
     }
 
   }

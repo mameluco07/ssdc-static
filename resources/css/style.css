@@ -8,6 +8,7 @@
   --L-BLUE: #BCE0FD;
   --D-grey: #2C3A47;
   --L-grey: #efefef;
+  --CREAM: #F3EFE4;
 }
 
 /* background-color: #0c3964; */
@@ -218,7 +219,11 @@ nav {
 
 .about-btn:hover .about-content {
   display: block;
-  margin-top: 10px;
+  /* margin-top: 10px; */
+}
+
+.about-btn:active .about-content {
+  display: block;
 }
 
 .news-btn {
@@ -412,94 +417,6 @@ input[type=submit]:active {
   z-index: 1; 
 }
 
-/* SECTION HISTORY */
-
-/* #history {
-  
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-attachment: fixed;
-  position: static;
-  z-index: -1;
-  width: 100vw;
-} */
-
-
-#history {
-  background-color: #F3EFE4;
-  background-size: cover;
-  width: 100vw;
-  height: fit-content;
-  font-family: 'Hind', sans-serif;
-  font-size: 105%;
-  letter-spacing: 0.1em;
-  line-height: 1.5em;
-  padding-bottom: 1em;
-}
-
-.section-history {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4%;
-  padding: 3%;
-  justify-items: center;
-  width: 100%;
-  color: black;
-
-}
-
-.history{
-  margin-bottom: 1em;
-  padding: 0 2em;
-  }
-
-.history p{
-  margin: 2%;
-  padding-left: 2%;
-  margin-bottom: 1em;
-}
-
-.obj-p {
-  margin: 2%;
-  /* padding-left: 2%; */
-  margin-bottom: 0.75em;
-  padding: 0 1em;
-}
-
-.objectives {
-  list-style: none;
-  padding: 0 2em 2em 2em;
-}
-
-.objectives li {
-  padding-bottom: 0.75em;
-  /* padding: 0 1em; */
-}
-
-img.ganesh {
-  margin: 1%;
-  min-width: 1fr;
-  align-self: center stretch;
-  justify-self: center stretch;
-  width: 100%;
-}
-
-img.obj {
-  padding-top: 3em;
-  align-self: center stretch;
-  justify-self: center stretch;
-}
-
-.obj {
-  width: 100%;
-  padding-top: 0em;
-  align-content: center;
-}
 
 /* SECTION MISSION AMBITION */
 
@@ -580,8 +497,6 @@ a:active {
 }
 
 
-
-
 /* ----------FOOTER-----------*/
 
 footer {
@@ -608,6 +523,11 @@ footer p {
   font-weight: 700;
 }
 
+.copyright {
+  color: #fff;
+  
+} 
+
 /* .footer-nav {
   display: flex;
   flex-wrap: wrap;
@@ -631,12 +551,8 @@ footer p {
   color: #888;
   background-color: var(--HL-hover);
   /* font-size: 1.1em; */
-  /* text-decoration-line: underline; */
-}
-
-.copyright {
-  color: #fff;
-  text-align: center;
+  /* text-decoration-line: underline; 
 } */
+
 
 
