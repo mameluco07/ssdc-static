@@ -333,21 +333,6 @@ input[type=submit]:active {
     background-color: var(--M-BLUE);
 }
 
-
-
-/* .btn-ghost:hover,
-.btn-ghost:active {
-    border: 1px solid #cf6d17;
-    color: #fff;
-}
-
-.btn-ghost:link,
-.btn-ghost:visited {
-    border: 1px solid #e67e22;
-    color: #e67e22;
-} */
-
-
 /* --------------------------------*/
 /* ---------- LANDING PAGE ------- */
 /*---------------------------------*/
@@ -410,60 +395,38 @@ input[type=submit]:active {
   font-size: 1.2em;
   font-weight: 300;
   text-align: right;
-  width: 70%;
-  padding: 1px;
+  width: 300px;
+  padding: 3px 10px;
   margin-bottom: 2em;
+  border: 1px solid #cf6d17;
+  border-radius: 5px;
   position: relative;
-  z-index: 1; 
+  z-index: 1;
 }
 
 
-/* SECTION MISSION AMBITION */
 
-#mission-ambition {
-  background-color: #E8E8E8;
-  background-size: cover;
+.read a:link,
+a:visited {
+  color: rgb(253, 213, 160);
+  position: relative;
+  z-index: auto;
   
 }
 
-.section-mission {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 4%;
-  padding: 3%;
-  justify-items: center;
-  width: 100%;
-}
-
-.temple-ceiling {
-  width: 100%;
-}
-
-.temple-day {
-  width: 100%;
-}
-
-.mission {
-  gap: 4%;
-  padding: 3%;
-  justify-items: center;
-  height: fit-content;
-  width: 100%;
-}
-
-.ambition {
-  gap: 4%;
-  padding: 3%;
-  justify-items: center;
-  height: fit-content;
-  width: 100%;
+.read a:hover {
+  color: #fff;
+  border: 1px solid #cf6d17;
+  background-color: var(--M-BLUE);
+  position: relative;
+  z-index: auto;
+  transform: scale(110%);
 }
 
 /*----- LINKS ----*/
 
 a:link,
 a:visited {
-    /* color: #fff; */
     text-decoration: none;
     z-index: 100;
     position: relative;
@@ -481,38 +444,24 @@ a:active {
 }
 
 
-.read a:link,
-      a:visited {
-        color: rgb(253, 213, 160);
-        position: relative;
-        z-index: auto;
-      
-      }
-
-.read a:hover {
-  color: #908856;
-  position: relative;
-  z-index: auto;
- 
-}
-
-
 /* ----------FOOTER-----------*/
 
 footer {
   color: #fff;
   background-color: var(--D-BLUE);
+  background-size: cover;
   font-family: 'Hind', sans-serif;
   grid-row-start: 3;
   grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-end: 4;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  /* width: 100vw; */
+  width: 100vw;
   flex-direction: row;
   align-items: top;
   padding-top: 1.2em;
   justify-items: center;
+  justify-self: center;
 }
 
 footer p {

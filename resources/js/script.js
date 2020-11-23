@@ -14,3 +14,6 @@
       }
 
   });
+
+//   var extern = document.getElementsByTagName("link")[0].import;
+//   var content = document.querySelector('link[rel="import"]').import;

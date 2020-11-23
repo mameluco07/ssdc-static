@@ -1,5 +1,3 @@
-/* SECTION HISTORY */
-
 html {
   background-color: var(--CREAM);
 }
@@ -27,50 +25,56 @@ html {
   color: #000;
 }
 
-
 #history {
   background-color: var(--CREAM);
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 32.5% 35% 32.5%;
   grid-template-rows: 15% 70% 15%;
   height: 100vh;
   background-size: cover;
 }
 
-.section-history {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  justify-items: center;
-  align-self: flex-end;
-  gap: 5%;
-  padding: 12% 4%;
-  width: 100%;
-  color: black;
-
+.max-w {
+  max-width: 1400px;
+  margin: auto;
 }
 
-.history{
-  margin-bottom: 1em;
-  padding: 0 2em;
-  }
+h2 {
+  margin: 0;
+  font-size: 240%;
+}
 
-.history p{
-  margin: 2%;
-  padding-left: 2%;
-  margin-bottom: 1em;
+.history-container {
+  grid-row-start: 2;
+}
+
+.history {
+  padding: 2em 3em 0;
+}
+
+.ganesh {
+  margin-top: 0em;
+  padding: 2em 2em;
+  width: 100%;
+  height: auto;
+  
+}
+
+.objectives-container {
+  grid-row-start: 2;
+  grid-column-start: 2;
+
 }
 
 .obj-p {
-  margin: 2%;
-  /* padding-left: 2%; */
   margin-bottom: 0.75em;
-  padding: 0.2em;
+  padding: 2em 2em 0;
 }
 
 .objectives {
   list-style: none;
   padding: 0 2em 2em 2em;
+  font-weight: 500;
 }
 
 .objectives li {
@@ -78,18 +82,177 @@ html {
   /* padding: 0 1em; */
 }
 
-img.ganesh {
-  margin: 1%;
-  min-width: 1fr;
-  width: 100%;
-}
-
-img.obj {
-  padding-top: 3em;
-}
-
 .obj {
+  grid-row-start: 2;
+  grid-column-start: 3;
+  /* display: flex; */
   width: 100%;
-  padding-top: 0em;
-  align-content: center;
+  height: auto;
+  padding: 1em;
+  align-self: center;
 }
+
+footer {
+  overflow: visible;
+
+}
+
+/* ============== */
+/* MEDIAS SESSION */
+/* ============== */
+
+@media (max-width: 1200px) {
+  
+  #history {
+  grid-template-columns: 30% 40% 30%;
+  }
+
+  .history {
+    padding: 2em;
+  }
+  
+  .objectives {
+    list-style: none;
+    font-weight: 500;
+  }
+  
+  .objectives li {
+    padding-bottom: 0.75em;
+
+  }
+
+  .obj {
+    padding: 10px;
+  }
+
+  .ganesh {
+    margin: 1%;
+    padding: 0 1em;
+    width: 100%;
+    height: auto;
+    
+  }
+
+  .obj-p {
+    padding: 2em 1em 0;
+  }
+
+}
+
+@media (max-width: 1000px) {
+  #history {
+    grid-template-columns: 1fr 2fr;
+    }
+  
+    .obj {
+      display: none;
+    }
+  
+    .obj-p {
+      margin-bottom: 0.75em;
+      padding: 2em 3em 0;
+    }
+    
+    .objectives {
+      list-style: none;
+      padding: 0 2em 0em 2em;
+      font-weight: 500;
+    }
+    
+    .objectives li {
+      padding-bottom: 0.75em;
+      padding: 1em 1em 0;
+    }
+
+    .history {
+      margin-bottom: 0.75em;
+      padding: 2em 2em 0;
+    }
+  }
+
+@media (max-width: 767px) { 
+  
+  #history {
+    grid-template-columns: 100%;
+    /* grid-template-rows: 20% 30% 50%; */
+    display: block;
+  }
+
+  .history-container {
+    padding-top: 120px;
+    /* grid-row-start: 2; */
+  }
+
+  .objectives-container {
+    /* grid-row-start: 3; */
+    /* padding: 3%; */
+    font-size: 100%;
+  }
+  
+  .obj {
+    display: none;
+  }
+  
+  .ganesh {
+    display: none;
+  }
+  
+}
+
+@media (max-width: 479px) {
+  .section-history {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4%;
+    padding: 3%;
+    justify-items: center;
+    height: fit-content;
+    width: 100%;
+    
+  }
+
+}
+
+@media (max-height: 810px) {
+
+  .intro > h1 {
+    margin-bottom: 0.5em;
+  }
+
+  .obj {
+    align-self: flex-start;
+    
+  }
+
+  footer {
+    grid-row-start: 4;
+    /* display: none; */
+  }
+
+  .history {
+    padding: 1em 2em;
+  }
+
+  .ganesh {
+    margin: 1%;
+    padding: 0 2em 2em;
+    width: 100%;
+    height: auto;
+  }
+
+  .obj-p {
+    margin-bottom: 0.75em;
+    padding: 1em 1em 0;
+  }
+
+  .history-container {
+    padding-top: 10px;
+  }
+
+  .objectives-container {
+    font-size: 100%;
+    padding-top: 10px;
+  }
+
+}
+

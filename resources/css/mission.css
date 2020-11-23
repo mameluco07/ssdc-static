@@ -1,0 +1,38 @@
+#mission-ambition {
+  background-color: #E8E8E8;
+  background-size: cover;
+  
+}
+
+.section-mission {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4%;
+  padding: 3%;
+  justify-items: center;
+  width: 100%;
+}
+
+.temple-ceiling {
+  width: 100%;
+}
+
+.temple-day {
+  width: 100%;
+}
+
+.mission {
+  gap: 4%;
+  padding: 3%;
+  justify-items: center;
+  height: fit-content;
+  width: 100%;
+}
+
+.ambition {
+  gap: 4%;
+  padding: 3%;
+  justify-items: center;
+  height: fit-content;
+  width: 100%;
+}
