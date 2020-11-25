@@ -7,11 +7,10 @@
   --M-BLUE: #2699FB;
   --L-BLUE: #BCE0FD;
   --D-grey: #2C3A47;
+  --M-grey: #e8e8e8;
   --L-grey: #efefef;
   --CREAM: #F3EFE4;
 }
-
-/* background-color: #0c3964; */
 
 * {
   margin: 0;
@@ -35,7 +34,7 @@ body {
 a {
   text-decoration: none;
 }
-
+  
 .clearfix {zoom: 1}
 .clearfix:after {
     content: '.';
@@ -45,7 +44,6 @@ a {
     visibility: hidden;
 }
 
-
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
   box-sizing: border-box;
@@ -54,11 +52,15 @@ html {
   box-sizing: inherit;
 }
 
-
 /* 
   font-family: 'Hind', sans-serif;
   font-family: 'Macondo', cursive;
   font-family: 'Macondo Swash Caps', cursive; */
+
+.max-w {
+  max-width: 1400px;
+  margin: auto;
+}
 
 /* ----- HEADINGS ----- */
 
@@ -442,7 +444,6 @@ a:active {
     z-index: auto;
     
 }
-
 
 /* ----------FOOTER-----------*/
 

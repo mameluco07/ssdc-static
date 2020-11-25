@@ -9,11 +9,10 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Macondo&family=Macondo+Swash+Caps&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="resources/css/style.css">
-  <!-- <link rel="stylesheet" href="resources/css/grid.css"> -->
+  <link rel="stylesheet" href="resources/css/mission.css">
   <link rel="stylesheet" href="resources/css/queries.css">
-  <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
-  <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
 
+         <!--    FAVICON links    -->
   <link rel="apple-touch-icon" sizes="180x180" href="resources/favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="resources/favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="resources/favicons/favicon-16x16.png">
@@ -24,29 +23,104 @@
   
 </head>
 
-
 <body>
+
+  <header>
+    <nav>
+      <div>
+      <a class="logo" href="index.html">
+      <img src="resources/img/sneh_logo_darkblue.svg" alt="Sneh Sangam logo" />
+    </a>
+    <a class="mobile-nav-icon js--nav-icon"><i class="fa fa-bars" aria-hidden="true"></i> </a>
+    
+    <div class="main-nav js--main-nav">
+        <div class="about-btn">
+        <a href="index.html" class="btn btn-blue">About</a>
+          <div class="about-content">
+            <a href="history.html" class="btn btn-blue">History</a>
+            <a href="mission.html" class="btn btn-blue">Mission</a>
+            <a href="resources/pdf/constitution.pdf" class="btn btn-blue">Constitution</a>
+            <a href="achievements.html" class="btn btn-blue">Recognition</a>
+            <a href="comittee.html" class="btn btn-blue">Comittee</a>
+            <a href="patrons.html" class="btn btn-blue">Patrons</a>
+          </div>
+        </div>  
+        <div class="news-btn">
+          <a href="news.html" class="btn btn-blue">News</a>
+        </div>
+        <div class="events-btn">
+          <a href="events.html" class="btn btn-blue">Events</a>
+          <div class="events-content">
+            <a href="day_centre.html" class="btn btn-blue">Day centre</a>
+            <a href="functions.html" class="btn btn-blue">Functions</a>
+            <a href="meetings.html" class="btn btn-blue">Meetings</a>
+            <a href="holidays.html" class="btn btn-blue">Holidays</a>
+            <a href="gallery.html" class="btn btn-blue">Photo Gallery</a>
+          </div>
+        </div>
+        <div class="links-btn">
+          <a href="links.html" class="btn btn-blue">Links</a>
+        </div>
+        <div class="contact-btn">
+          <a href="contact.html" class="btn btn-blue">Contact</a>
+        </div>
+      </div>
+
+    </div>
+    </nav>
+    </header>
   
-  <section id="mission-ambition" class="section-mission banner">
-    <div>
+  <section id="mission-ambition" class="max-w">
+    <div class="mission-container">
       <h2>Mission</h2>
-      <p class="mission">
+      <p>
         Currently there are no other organisations that provide the services and support that this community require. To date we have 438 members and a waiting list 70 people wishing to join the organisation.
       </p>
-      <img src="resources/img/concrete-ceiling.jpg" alt="pic" class="temple-ceiling">
+      <img src="resources/img/concrete-ceiling.jpg" alt="Mission" class="temple-ceiling">
     </div>
-    <div class="ambition">
+    <div class="ambition-container">
       <h2>Ambition</h2>
       <p>We Would Like To Commission A Purpose Built Venue For Future Activity. The Premises Would Be Home To The SSDC 50 Plus Charity, But Would Also Be Available For Members To Hire For Their Own Family Events. From The Income Received From Venue Hire We Would Be Able Increase The Number Of Members And Open Our Doors To Younger Members Of The Community Who May Wish To Be Involved. It Would Also Reduce The Number Of Grants We Apply For To Allow The Charity To Continue. We Are Currently Looking For Investors And Charitable Donations To Assist In This Process. </p>
       
     </div>
-    <div>
-      <img src="resources/img/photo-of-temple-during-daytime.jpg" alt="Temple" class="temple-day">
-    </div>
+  
+      <div class="temple-day">
+        <img src="resources/img/temple.jpg" alt="Temple">
+      </div>
+
+    <footer id="footer">
+   
+      <div><img src="resources/img/sneh_logo_white.svg" alt="Sneh Sangam logo" class="logo-footer"></div>
+     
+      <div class="copyright">
+        <p>Copyright &copy; 2020 </p>
+        <p>All rights reserved.</p>
+        <p class="title">Designed by MCAD</p>
+        </p>
+      </div>
+     
+      <div class="address">
+        <p>7 Halfway Close, Birmingham,</p>
+        <p>ENG B44 8JL</p>
+        <p>Tel: 0121 356 8352</p>
+        <p>Email: info@ssdc50.org.uk</p>
+      </div>
+     
+      <div>
+        <p class="title">Sneh Sangam</p>
+        <p class="title">50 Plus Day Centre</p>
+        <p>Reg. Charity No: 1113946</p>
+      </div>
+     
+     </footer>
 
   </section>
 
 
-
+  <script src="https://use.fontawesome.com/b35b86f56d.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="vendors/js/jquery.waypoints.min.js"></script>
+  <script src="resources/js/script.js"></script>
 
 </body>
+</html>
