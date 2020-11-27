@@ -1,4 +1,4 @@
-html {
+ html {
   background-color: var(--CREAM);
 }
 
@@ -60,10 +60,9 @@ h2 {
   font-weight: 500;
 }
 
-.objectives li {
-  padding-bottom: 0.75em;
-  /* padding: 0 1em; */
-}
+/* .objectives li {
+  padding-bottom: 0.2em;
+} */
 
 .obj {
   grid-row-start: 2;

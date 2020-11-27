@@ -5,6 +5,7 @@
 :root{
   --D-BLUE: #07335D;
   --M-BLUE: #2699FB;
+  --m-BLUE: #25CCF7;
   --L-BLUE: #BCE0FD;
   --D-grey: #2C3A47;
   --M-grey: #e8e8e8;
@@ -58,7 +59,7 @@ html {
   font-family: 'Macondo Swash Caps', cursive; */
 
 .max-w {
-  max-width: 1400px;
+  max-width: 1200px;
   margin: auto;
 }
 
@@ -97,12 +98,19 @@ h2 {
 }
 
 h3 {
-  font-size: 110%;
-  margin-bottom: 15%;
+  font-family: 'hind', sans-serif;
+  font-size: 130%;
+  margin: 0;
+  font-weight: 500;
+  
 }
 
 p {
   font-family: 'Hind', sans-serif;
+}
+
+.long-p {
+  padding:  1em 2em;
 }
 
 
@@ -457,12 +465,12 @@ footer {
   grid-column-end: 4;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  width: 100vw;
   flex-direction: row;
   align-items: top;
   padding-top: 1.2em;
   justify-items: center;
   justify-self: center;
+  
 }
 
 footer p {

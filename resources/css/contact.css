@@ -1,15 +1,6 @@
-/* -------- CONTACT PAGE----------*/
 
 html {
   background-color: var(--L-grey);
-}
-
-:root{
-  --D-BLUE: #07335D;
-  --M-BLUE: #2699FB;
-  --L-BLUE: #BCE0FD;
-  --D-grey: #2C3A47;
-  --L-grey: #efefef;
 }
 
 #contact {
