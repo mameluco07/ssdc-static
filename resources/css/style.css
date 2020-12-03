@@ -463,14 +463,20 @@ footer {
   grid-row-start: 3;
   grid-column-start: 1;
   grid-column-end: 4;
+  width: 100%;
+  overflow: hidden;
+}
+
+.wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   flex-direction: row;
   align-items: top;
-  padding-top: 1.2em;
+  padding: 1.3em 0;
   justify-items: center;
   justify-self: center;
-  
+  max-width: 1200px;
+  margin: auto;
 }
 
 footer p {
@@ -483,8 +489,11 @@ footer p {
 
 .copyright {
   color: #fff;
-  
 } 
+
+.address {
+  text-align: left;
+}
 
 /* .footer-nav {
   display: flex;

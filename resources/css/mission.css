@@ -19,8 +19,7 @@ html {
   background-size: cover;
   display: grid;
   grid-template-columns: 33.33% 33.33% 33.33%;
-  grid-template-rows: 15% 70% 15%;
-  height: 100vh;
+    
 }
 
 h2 {
@@ -29,12 +28,15 @@ h2 {
 }
 
 .mission-container {
-  grid-row-start: 2;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  padding-top: 120px;
+  
 }
 
 .mission-container > p {
   justify-items: center;
-  height: fit-content;
   margin-bottom: 0.75em;
   padding: 1em 2em 0;
   width: 100%;
@@ -46,10 +48,10 @@ h2 {
 }
 
 .ambition-container {
-  grid-row-start: 2;
+  display: flex;
+  flex-direction: column;
   justify-items: center;
-  height: fit-content;
-  width: 100%;
+  padding-top: 120px;
 }
 
 .ambition-container > p{
@@ -58,17 +60,38 @@ h2 {
 }
 
 .temple-day {
-  grid-row-start: 2;
   grid-column-start: 3;
-  padding: 1em;
+  padding: 120px 1em 50px;
   height: auto;
   align-self: left;
-  /* overflow: hidden; */
 }
 
 img {
   width: 100%;
 }
+
+.btn-ambition {
+  display: flex;
+  align-content: center;
+  color: #fff;
+  background-color: var(--D-grey);
+  align-self: center;
+  padding: 0.5rem 1.5rem;
+  border-radius: 10px;
+  margin: 1.5em 4em;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.btn-ambition:hover {
+  background-color: var(--L-BLUE);
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+}
+
 
 /* ============== */
 /* MEDIAS SESSION */

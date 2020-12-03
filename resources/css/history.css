@@ -19,7 +19,7 @@
   background-size: cover; 
   display: grid;
   grid-template-columns: 32.5% 35% 32.5%;
-  grid-template-rows: 15% 70% 15%;
+  grid-template-rows: 15% 85%;
   height: 100vh;
 }
 
@@ -67,16 +67,18 @@ h2 {
 .obj {
   grid-row-start: 2;
   grid-column-start: 3;
-  width: 100%;
-  height: auto;
-  padding: 1.6em;
-  align-self: center;
-  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  padding-top: 2em;
 }
 
-footer {
-  overflow: hidden;
+.pic {
+  width: 100%;
+  height: auto;
+  margin: auto;
 }
+
 
 /* ============== */
 /* MEDIAS SESSION */
@@ -185,7 +187,7 @@ footer {
 
   footer {
     grid-row-start: 4;
-    /* display: none; */
+    width: 100%;
   }
 
   .history {
