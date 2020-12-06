@@ -31,7 +31,7 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-items: center;
-  padding-top: 120px;
+  padding-top: 200px;
   
 }
 
@@ -51,7 +51,7 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-items: center;
-  padding-top: 120px;
+  padding-top: 200px;
 }
 
 .ambition-container > p{
@@ -61,7 +61,7 @@ h2 {
 
 .temple-day {
   grid-column-start: 3;
-  padding: 120px 1em 50px;
+  padding: 200px 1em 50px;
   height: auto;
   align-self: left;
 }
@@ -181,7 +181,7 @@ footer {
 
   .mission-container {
     font-size: 100%;
-    padding-top: 30px;
+    padding-top: 120px;
   }
 
   .mission-container > p {
@@ -190,7 +190,7 @@ footer {
   
   .ambition-container {
     font-size: 100%;
-    padding-top: 30px;
+    padding-top: 120px;
   }
 
   .ambition-container p {
@@ -199,7 +199,7 @@ footer {
   }
 
   .temple-day {
-    padding-top: 30px;
+    padding-top: 120px;
   }
 
   footer {

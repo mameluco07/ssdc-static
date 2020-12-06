@@ -1,0 +1,137 @@
+html {
+  background-color: var(--M-grey);
+}
+
+:root {
+  --card-pad: 12px;
+  --card-width: 170px;
+}
+
+body {
+  display: block;
+  width: 100%;
+}
+
+.mobile-nav-icon {
+  float: right;
+  margin-top: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+.mobile-nav-icon i {
+  font-size: 200%;
+  color: #000;
+}
+
+.pg-title {
+  padding-top: 150px;
+  margin-bottom: 20px;
+  text-transform: none;
+}
+
+h2 {
+  font-family: 'Macondo', cursive;
+  font-size: 220%;
+  letter-spacing: 0.1em;
+}
+
+#presidents {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+#sec {
+  display: flex;
+  padding: var(--card-pad);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#members {
+  display: flex;
+  padding: var(--card-pad);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card-row {
+  display: flex;
+  padding: var(--card-pad);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  box-shadow: #000;
+  width: var(--card-width);
+}
+
+.card-container {
+  padding: var(--card-pad);
+}
+
+.card p {
+  padding: 0.1em 0.6em 0 0.6em;
+}
+
+#photo {
+  width: 100%;
+  height: auto;
+}
+
+.first-col {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  margin: var(--card-pad);
+  display: flex;
+  flex-direction: column;
+}
+
+.second-col {
+  grid-row-start: 1;
+  grid-column-start: 2;
+  margin: var(--card-pad);
+  display: flex;
+  width: 100%;
+}
+
+.member {
+  font-weight: 500;
+  line-height: 1.2em;
+  
+}
+
+.align {
+  text-align: center;
+}
+
+
+.right {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-right: var(--card-pad);
+}
+
+.center {
+  display: flex;
+  padding: 1.5rem;
+  justify-content: center;
+}
+
+.left {
+  display: flex;
+  padding-left: var(--card-pad);
+}
+
+@media (max-width: 767px) {
+
+  #activities {
+    display: inline-block;
+  }
+
+}

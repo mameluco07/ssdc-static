@@ -1,0 +1,158 @@
+html {
+  background-color: var(--CREAM);
+}
+
+body {
+  display: block;
+  width: 100%;
+}
+
+.mobile-nav-icon {
+  float: right;
+  margin-top: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+.mobile-nav-icon i {
+  font-size: 200%;
+  color: #000;
+}
+
+.pg-title {
+  padding-top: 150px;
+  margin-bottom: 0;
+  text-transform: none;
+}
+
+h2 {
+  font-family: 'Macondo Swash Caps', cursive;
+  font-size: 220%;
+  letter-spacing: 0.1em;
+}
+
+#rec {
+  background: var(--CREAM);
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+/* #rec h2 {
+  font-size: 200%;
+  margin: 0 0 10px;
+} */
+
+.second-col h3 {
+  text-align: center;
+  
+}
+
+.first-col {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  margin: 5% 0 5% 0;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.second-col {
+  margin: 5% 0 5% 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.pic {
+  padding: 1em 2em;
+  width: 100%;
+  height: auto;
+}
+
+.champions {
+  display: flex;
+  justify-content: center;
+  padding: 2em;
+}
+
+.align {
+  text-align: center;
+}
+
+.lloyds-logo {
+  display: flex;
+  align-self: center;
+  width: 350px;
+  padding: 25px;
+}
+
+.barclays {
+  display: flex;
+  align-self: center;
+  width: 300px;
+  padding: 25px;
+}
+
+#certs {
+  display: grid;
+  grid-template: 250px / 1fr 1fr 1fr;
+  max-width: 1200px;
+  margin: auto;
+  padding-bottom: 2em;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 auto 10px;
+}
+
+.gallery:hover {
+  /* width: 120%; */
+  cursor: pointer; 
+}
+
+h3 {
+  text-align: center;
+  padding: 0 0 25px 0;
+}
+
+#other-certs {
+  display: grid;
+  grid-template: 300px / 33.33% 33.33% 33.33%;
+  max-width: 1200px;
+  margin: auto;
+  padding-bottom: 2.5em;
+}
+
+.other {
+  display: flex;
+  height: 100%;
+}
+
+.right {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-right: 2em;
+}
+
+.center {
+  display: flex;
+  padding: 2rem;
+  justify-content: center;
+}
+
+.left {
+  display: flex;
+  padding-left: 2em;
+}
+
+@media (max-width: 767px) {
+
+  #activities {
+    display: inline-block;
+  }
+
+}

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="167.458" height="90.521" viewBox="0 0 167.458 90.521">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-1 {
+        font-size: 16px;
+        font-family: Macondo-Regular, Macondo;
+      }
+
+      .cls-2 {
+        font-size: 26px;
+        font-family: MacondoSwashCaps-Regular, Macondo Swash Caps;
+      }
+    </style>
+  </defs>
+  <g id="_50plus_logo" data-name="50plus_logo" transform="translate(-1173 -89)">
+    <text id="_50_plus_day_centre" data-name="50 plus day centre" class="cls-1" transform="translate(1253.919 174.521)"><tspan x="-64.44" y="0">50 Plus Day Centre</tspan></text>
+    <text id="Sneh_Sangam" data-name="Sneh Sangam" class="cls-2" transform="translate(1227.608 112)"><tspan x="0" y="0">Sneh</tspan></text>
+    <path id="path492" class="cls-3" d="M15.111,35.17l-2.342,1.875L20,44.278a5.457,5.457,0,0,1,.737.917l3.367-4V18.332a1.618,1.618,0,1,0-3.235,0v6.623h-3V18.332a4.618,4.618,0,0,1,6.236-4.326V.026A3.45,3.45,0,0,0,23.7,0a3.406,3.406,0,0,0-3.09,1.974L13.167,15.721l-.023.044a9.881,9.881,0,0,0-.817,6.47Zm0,0" transform="translate(1173 90.832)"/>
+    <path id="path494" class="cls-3" d="M27.108,14.006a4.618,4.618,0,0,1,6.236,4.326v6.623h-3V18.332a1.618,1.618,0,1,0-3.235,0V41.2l3.367,4a5.5,5.5,0,0,1,.743-.925l7.227-7.228L36.1,35.171l2.784-12.936a9.878,9.878,0,0,0-.817-6.47l-.011-.022L30.6,1.974A3.406,3.406,0,0,0,27.512,0a3.451,3.451,0,0,0-.4.026Zm0,0" transform="translate(1173 90.832)"/>
+    <path id="path496" class="cls-3" d="M44.111,39.143a2.489,2.489,0,0,0-3.515,0L33.34,46.4a2.485,2.485,0,0,0,3.515,3.515l7.256-7.256A2.488,2.488,0,0,0,44.111,39.143Zm0,0" transform="translate(1173 90.832)"/>
+    <path id="path498" class="cls-3" d="M51.22,47.328c-1.141-.92-2.631-2.131-4.263-3.442a5.484,5.484,0,0,1-.724.895l-6.44,6.44H51.22Zm0,0" transform="translate(1173 90.832)"/>
+    <path id="path500" class="cls-3" d="M14.366,49.914A2.485,2.485,0,1,0,17.88,46.4l-7.256-7.256a2.485,2.485,0,1,0-3.515,3.515Zm0,0" transform="translate(1173 90.832)"/>
+    <path id="path502" class="cls-3" d="M0,51.22H11.427l-6.44-6.44a5.475,5.475,0,0,1-.735-.913C2.65,45.152,1.159,46.347,0,47.279Zm0,0" transform="translate(1173 90.832)"/>
+    <text id="Sneh_Sangam-2" data-name="Sneh Sangam" class="cls-2" transform="translate(1255.458 139.3)"><tspan x="0" y="0">Sangam</tspan></text>
+  </g>
+</svg>
